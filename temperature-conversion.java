@@ -19,8 +19,24 @@ public class Main
 		Scanner userChoice = new Scanner(System.in);
 		System.out.println("Enter C to convert to Celcius or F to convert to Farenheit.");
 		String userFC = userChoice.nextLine();
-		
-		//equals method actually compares content, == compares location 
+ 		
+ 		//extra credit: checks if conversion is scientificaly valid
+ 		 // 
+		if ( userDegree == 459.67 && (userFC.equals("C") || userFC.equals("c")) ){
+		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
+ 		}
+ 		else if ( userDegree < 459.67 && (userFC.equals("C") || userFC.equals("c"))){
+		    System.out.println("You have entered a temperature below absolute zero. A conversion would not be scientifically valid.");
+ 		}
+ 		else if ( userDegree == -273.15 && (userFC.equals("F") || userFC.equals("f")) ){
+		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
+ 		}
+ 		else if ( userDegree < -273.15 (userFC.equals("F") || userFC.equals("f")) ){
+		    System.out.println("You have entered a temperature below absolute zero. A conversion would not be scientifically valid.");
+ 		}
+ 		
+ 		
+ 		//reads which conversion to do from the user
  		if (userFC.equals("C") || userFC.equals("c")) {
  		    double userResultF = ((userDegree - 32)*5)/9;
 		    System.out.println(userDegree + "F " + "is equal to " + userResultF +  "C " );
