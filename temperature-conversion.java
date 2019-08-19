@@ -15,26 +15,20 @@ public class Main
 		//converts userInput to a double
 		double userDegree = userInput .nextDouble();
 		
+		//extra credit: checks if conversion is scientifically valid
+	    if ( userDegree == 459.67 || userDegree < 459.67 ){
+		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
+		    System.exit(0);
+ 		}
+ 		else if ( userDegree == -273.15 || userDegree < -275.15 ){
+		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
+		    System.exit(0);
+ 		}
+		
 		//scanner for user input of c or f
 		Scanner userChoice = new Scanner(System.in);
 		System.out.println("Enter C to convert to Celcius or F to convert to Farenheit.");
 		String userFC = userChoice.nextLine();
- 		
- 		//extra credit: checks if conversion is scientificaly valid
- 		 // 
-		if ( userDegree == 459.67 && (userFC.equals("C") || userFC.equals("c")) ){
-		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
- 		}
- 		else if ( userDegree < 459.67 && (userFC.equals("C") || userFC.equals("c"))){
-		    System.out.println("You have entered a temperature below absolute zero. A conversion would not be scientifically valid.");
- 		}
- 		else if ( userDegree == -273.15 && (userFC.equals("F") || userFC.equals("f")) ){
-		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
- 		}
- 		else if ( userDegree < -273.15 (userFC.equals("F") || userFC.equals("f")) ){
-		    System.out.println("You have entered a temperature below absolute zero. A conversion would not be scientifically valid.");
- 		}
- 		
  		
  		//reads which conversion to do from the user
  		if (userFC.equals("C") || userFC.equals("c")) {
@@ -49,3 +43,8 @@ public class Main
  		}
 	}
 }
+
+
+
+
+
