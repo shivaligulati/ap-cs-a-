@@ -23,6 +23,24 @@ public class Main
 		System.out.println("Enter the last side length of your triangle.");
 		double c = sideInput3. nextDouble();
 		
+		//ensuring that c is the largest value (doesn't work) 
+		if (a > b ) {
+		    double temp1 = a;
+		    a = b;
+		    b = temp1;
+		}
+		else if (c < b) {
+		    double temp2 = c;
+		    c = b;
+		    b = temp2;
+		}
+		else if (c < a ){
+		    double temp3 = c;
+		    c = a;
+		    a = temp3;
+		}
+		
+		
 		//checks to see whether three side form a triangle
 		if (a + b > c){
 		  //  System.out.println("These three sides form a triangle.");
