@@ -25,12 +25,26 @@ public class Main
 		
 		//checks to see whether three side form a triangle
 		if (a + b > c){
-		    System.out.println("These three sides form a triangle.");
+		  //  System.out.println("These three sides form a triangle.");
 		}
 		else {
 		    System.out.println("These three sides do not form a triangle.");
 		    System.exit(0);
 
 		}
+		
+		
+		//type of triangle
+		if ( (a*a) + (b*b) == (c*c) ){
+		    System.out.println("These three sides form a right triangle.");
+		}
+		else if  ( (a*a) + (b*b) > (c*c) ){
+		    System.out.println("These three sides form an acute triangle.");
+		}
+		else {
+		    System.out.println("These three sides form an obtuse triangle.");
+
+		}
+		
 	}
 }
