@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("Triangle Test Program");
+	    
+	    //scanner for user input of side length one
+		Scanner sideInput1 = new Scanner(System.in); 
+		System.out.println("Enter one side length of your triangle.");
+		double a = sideInput1. nextDouble();
+		
+		//scanner for user input of side length three
+		Scanner sideInput2 = new Scanner(System.in); 
+		System.out.println("Enter another side length of your triangle.");
+		double b = sideInput2. nextDouble();
+		
+		//scanner for user input of side length three
+		Scanner sideInput3 = new Scanner(System.in); 
+		System.out.println("Enter the last side length of your triangle.");
+		double c = sideInput3. nextDouble();
+		
+		//checks to see whether three side form a triangle
+		if (a + b > c){
+		    System.out.println("These three sides form a triangle.");
+		}
+		else {
+		    System.out.println("These three sides do not form a triangle.");
+		    System.exit(0);
+
+		}
+	}
+}
