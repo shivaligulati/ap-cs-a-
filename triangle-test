@@ -10,7 +10,7 @@ public class Main
 	public static void main(String[] args) {
 	    System.out.println("Triangle Test Program");
 	    
-	    //scanner for user input of side length one
+	        //scanner for user input of side length one
 		Scanner sideInput1 = new Scanner(System.in); 
 		System.out.println("Enter one side length of your triangle.");
 		double a = sideInput1. nextDouble();
@@ -24,6 +24,12 @@ public class Main
 		Scanner sideInput3 = new Scanner(System.in); 
 		System.out.println("Enter the last side length of your triangle.");
 		double c = sideInput3. nextDouble();
+		
+		//rounding
+		double EPSILON = 1E-10;
+		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
+			a*a + b*b - c*c = 0;
+		}
 		
 		//ensuring that c is the largest value (doesn't work) 
 		if (a > b ) {
