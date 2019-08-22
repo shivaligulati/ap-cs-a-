@@ -15,7 +15,7 @@ public class Main
 		System.out.println("Enter one side length of your triangle.");
 		double a = sideInput1. nextDouble();
 		
-		//scanner for user input of side length three
+		//scanner for user input of side length two
 		Scanner sideInput2 = new Scanner(System.in); 
 		System.out.println("Enter another side length of your triangle.");
 		double b = sideInput2. nextDouble();
@@ -26,7 +26,7 @@ public class Main
 		double c = sideInput3. nextDouble();
 		
 		
-		//ensuring that c is the largest value (doesn't work) 
+		//ensuring that c is the largest value 
 		if (a > b ) {
 		    double temp1 = a;
 		    a = b;
