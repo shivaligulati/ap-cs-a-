@@ -28,7 +28,7 @@ public class Main
 		//rounding
 		double EPSILON = 1E-10;
 		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
-			a*a + b*b - c*c = 0;
+			System.out.println("These three sides form a right triangle.");
 		}
 		
 		//ensuring that c is the largest value (doesn't work) 
