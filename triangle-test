@@ -25,11 +25,6 @@ public class Main
 		System.out.println("Enter the last side length of your triangle.");
 		double c = sideInput3. nextDouble();
 		
-		//rounding
-		double EPSILON = 1E-10;
-		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
-			System.out.println("These three sides form a right triangle.");
-		}
 		
 		//ensuring that c is the largest value (doesn't work) 
 		if (a > b ) {
@@ -48,6 +43,11 @@ public class Main
 		    a = temp3;
 		}
 		
+		//rounding
+		double EPSILON = 1E-10;
+		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
+			System.out.println("These three sides form a right triangle.");
+		}
 		
 		//checks to see whether three side form a triangle
 		if (a + b > c){
