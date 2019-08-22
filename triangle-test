@@ -43,11 +43,6 @@ public class Main
 		    a = temp3;
 		}
 		
-		//rounding
-		double EPSILON = 1E-10;
-		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
-			System.out.println("These three sides form a right triangle.");
-		}
 		
 		//checks to see whether three side form a triangle
 		if (a + b > c){
@@ -61,7 +56,13 @@ public class Main
 		
 		
 		//type of triangle
-		if ( (a*a) + (b*b) == (c*c) ){
+		
+		//rounding
+		double EPSILON = 1E-10;
+		if(a*a + b*b - c*c < EPSILON && a*a + b*b - c*c > -EPSILON) {
+			System.out.println("These three sides form a right triangle.");
+		}
+		else if ( (a*a) + (b*b) == (c*c) ){
 		    System.out.println("These three sides form a right triangle.");
 		}
 		else if  ( (a*a) + (b*b) > (c*c) ){
