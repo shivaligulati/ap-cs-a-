@@ -21,7 +21,7 @@ public class Main
 		String userFC = userChoice.nextLine();
 		
 		//extra credit: checks if conversion is scientifically valid
-	    if ( userDegree >= 459.67 && userFC.equals("C") ){
+	    	if ( userDegree >= 459.67 && userFC.equals("C") ){
 		    System.out.println("You have entered a temperature at absolute zero. A conversion would not be scientifically valid.");
 		    //exists program so the scientifically invalid degree is not converted
 		    System.exit(0);
