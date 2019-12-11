@@ -1,2 +1,2 @@
-<h1>AP Computer Science A<h1>
+AP Computer Science A
  <p>AP Computer Science A Assignments &amp; Classwork</p>
